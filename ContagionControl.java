@@ -1,3 +1,4 @@
+// Lab 2 Contagion Control
 package Demo;
 
 import java.util.Scanner;
@@ -24,8 +25,9 @@ public class ContagionControl {
 			contactee[i] = i;
 		}
 		
+
 		for (int i = 0; i < N - 1; i++) {
-			int j = (int) (Math.random() * (N - i)) + i; 
+			int j = (int) (Math.random() * (N - i)) + i;
 			int z = contactee[i];
 			contactee[i] = contactee[j];
 			contactee[j] = z;
