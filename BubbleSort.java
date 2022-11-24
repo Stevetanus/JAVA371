@@ -3,14 +3,17 @@ package Demo;
 public class BubbleSort {
 
 	public static void main(String[] args) {
-		int[] A = new int[5];
+		int N = 1000;
+		int[] A = new int[N];
 		for(int i = 0; i < A.length; i++) {
-			A[i] =(int) (Math.random() * 100);
-			System.out.printf("%3s", A[i]);
+			A[i] =(int) (Math.random() * N);
 		}
 		
 		boolean swapped;
 		
+		System.out.println();
+		
+		long startTime = System.nanoTime();
 		do {
 			swapped = false;
 			for (int i = 0; i < A.length - 1; i++) {
@@ -22,10 +25,11 @@ public class BubbleSort {
 				}
 			}
 		} while (swapped);
-		
-		for(int i = 0; i < A.length; i++) {
-			System.out.printf("%3s", A[i]);
-		}
+
+		long duringTime = System.nanoTime() - startTime;
+
+		System.out.println();
+		System.out.println(duringTime);
 	}
 
 }
