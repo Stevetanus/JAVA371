@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ContagionControl {
 
 	public static void main(String[] args) {
-		System.out.println("Enter the numbers of population?");
+		System.out.println("Enter the number of population?");
 		
 		Scanner input = new Scanner (System.in);
 		int N = input.nextInt();

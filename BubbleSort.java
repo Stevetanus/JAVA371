@@ -11,8 +11,6 @@ public class BubbleSort {
 		
 		boolean swapped;
 		
-		System.out.println();
-		
 		long startTime = System.nanoTime();
 		do {
 			swapped = false;
@@ -28,8 +26,8 @@ public class BubbleSort {
 
 		long duringTime = System.nanoTime() - startTime;
 
-		System.out.println();
-		System.out.println(duringTime);
+		double duringTimeInMs = (double) duringTime / 1_000_000;
+		System.out.println(duringTimeInMs);
 	}
 
 }
