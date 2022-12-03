@@ -1,9 +1,12 @@
 package Demo;
 
-public class Pi {
+public class PiDemo {
 
 	public static void main(String[] args) {
 		
+		for (String elem: args) {
+			System.out.println(elem);
+		}
 		// (1) 10!
 		int ans1 = 1;
 		for (int x = 0; x < 10; x++) {
